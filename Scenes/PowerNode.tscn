@@ -1,0 +1,20 @@
+[gd_scene load_steps=3 format=2]
+
+[sub_resource type="CircleShape2D" id=1]
+radius = 6.66667
+
+[sub_resource type="StreamTexture" id=2]
+flags = 4
+load_path = "res://.import/power_node.png-e6301a2734bad1178448bf05e258b863.stex"
+
+[node name="PowerNode" type="KinematicBody2D"]
+scale = Vector2( 0.1, 0.1 )
+z_index = -1
+
+[node name="CollisionShape" type="CollisionShape2D" parent="."]
+scale = Vector2( 15, 15 )
+shape = SubResource( 1 )
+
+[node name="Sprite" type="Sprite" parent="."]
+scale = Vector2( 0.5, 0.5 )
+texture = SubResource( 2 )
