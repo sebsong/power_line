@@ -1,40 +1,30 @@
 extends Node2D
 
-class Set:
-	var dict : Dictionary
-
-	func Set():
-		dict = Dictionary()
-
-	func add(item):
-		dict[item] = null
-
-	func remove(item):
-		dict.erase(item)
-	
-	func has(item):
-		return dict.has(item)
-
-	func items():
-		return dict.keys()
-
 # set of powered objects this object is connected to
-var connections : Set = Set.new()
+var connections : Global.Set = Global.Set.new()
 
 var has_power : bool = false
 
 func _ready():
+	add_to_group("PoweredObjects")
 	check_power()
 
 func _process(_delta):
 	check_power()
 
+func power_on():
+	has_power = true
+
+func power_off():
+	has_power = false
+
 func add_connection(connection):
 	connections.add(connection)
+	# PowerManagement.emit_signal("connections_changed")
 
 func check_power():
 	for connection in connections.items():
 		if connection.has_power:
-			has_power = true
+			power_on()
 			return
-	has_power = false
+	power_off()

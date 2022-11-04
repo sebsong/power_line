@@ -11,13 +11,13 @@ var range_line : Node = null
 
 # Called when the node enters the scene tree for the first time.
 func _ready():
-	._ready()
+	add_to_group("PowerNodes")
 	update_color()
 	connect_to_power_nodes_in_range()
 
 # Called every frame. 'delta' is the elapsed time since the previous frame.
 func _process(_delta):
-	._process(_delta)
+	# ._process(_delta)
 	update_color()
 	connect_range_lines_to_player()
 

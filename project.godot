@@ -16,7 +16,8 @@ config/icon="res://Player/icon.png"
 
 [autoload]
 
-Global="*res://Global.gd"
+Global="*res://AutoLoads/Global.gd"
+PowerManagement="*res://AutoLoads/PowerManagement.gd"
 
 [display]
 

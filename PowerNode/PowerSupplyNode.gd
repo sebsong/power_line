@@ -1,4 +1,7 @@
 extends "res://PowerNode/PowerNode.gd"
 
+func _ready():
+	add_to_group("PowerSources")
+
 func check_power():
-	has_power = true
+	power_on()
