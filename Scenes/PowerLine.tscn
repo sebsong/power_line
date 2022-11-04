@@ -1,0 +1,5 @@
+[gd_scene format=2]
+
+[node name="Line" type="Line2D"]
+z_index = -2
+width = 2.0

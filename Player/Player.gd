@@ -16,13 +16,13 @@ func _process(delta):
 
 func move(delta):
 	if Input.is_action_pressed("ui_up"):
-		position.y -= speed * delta
+		move_and_slide(Vector2(0, -speed))
 	if Input.is_action_pressed("ui_down"):
-		position.y += speed * delta
+		move_and_slide(Vector2(0, speed))
 	if Input.is_action_pressed("ui_left"):
-		position.x -= speed * delta
+		move_and_slide(Vector2(-speed, 0))
 	if Input.is_action_pressed("ui_right"):
-		position.x += speed * delta
+		move_and_slide(Vector2(speed, 0))
 	
 func power_node_placement():
 	if Input.is_action_just_pressed("place_power_node"):
