@@ -12,6 +12,8 @@ load_path = "res://.import/power_node.png-e6301a2734bad1178448bf05e258b863.stex"
 [node name="PowerNode" type="KinematicBody2D" groups=["PowerNodes"]]
 scale = Vector2( 0.1, 0.1 )
 z_index = -1
+collision_layer = 2
+collision_mask = 2
 script = ExtResource( 1 )
 
 [node name="CollisionShape" type="CollisionShape2D" parent="."]
