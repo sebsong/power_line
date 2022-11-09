@@ -1,7 +1,7 @@
 extends Node2D
 
 # set of powered objects this object is connected to
-var connections : Global.Set = Global.Set.new()
+var connections = Global.Set.new()
 
 var has_power : bool = false
 

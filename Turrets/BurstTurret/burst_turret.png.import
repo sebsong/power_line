@@ -2,15 +2,15 @@
 
 importer="texture"
 type="StreamTexture"
-path="res://.import/power_node.png-e6301a2734bad1178448bf05e258b863.stex"
+path="res://.import/burst_turret.png-dd776752ae06686c9c5c55f9da30d213.stex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://PowerNode/power_node.png"
-dest_files=[ "res://.import/power_node.png-e6301a2734bad1178448bf05e258b863.stex" ]
+source_file="res://Turrets/BurstTurret/burst_turret.png"
+dest_files=[ "res://.import/burst_turret.png-dd776752ae06686c9c5c55f9da30d213.stex" ]
 
 [params]
 

@@ -1,4 +1,4 @@
-extends "res://PoweredObject.gd"
+extends "res://Power/PoweredObject.gd"
 
 const POWERED_COLOR : Color = Color("6680ff")
 const UNPOWERED_COLOR : Color = Color.black
@@ -11,7 +11,6 @@ func _ready():
 
 # Called every frame. 'delta' is the elapsed time since the previous frame.
 func _process(_delta):
-	# ._process(_delta)
 	update_color()
 
 

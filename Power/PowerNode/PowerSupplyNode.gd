@@ -1,4 +1,4 @@
-extends "res://PowerNode/PowerNode.gd"
+extends "res://Power/PowerNode/PowerNode.gd"
 
 func _ready():
 	add_to_group("PowerSources")

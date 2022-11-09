@@ -2,15 +2,15 @@
 
 importer="texture"
 type="StreamTexture"
-path="res://.import/power_supply_node.png-d7c6523ad3fc0cf4b5aaa90ced1b38d2.stex"
+path="res://.import/power_node.png-463069a5604e9d567e4622413e4a59b3.stex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://PowerNode/power_supply_node.png"
-dest_files=[ "res://.import/power_supply_node.png-d7c6523ad3fc0cf4b5aaa90ced1b38d2.stex" ]
+source_file="res://Power/PowerNode/power_node.png"
+dest_files=[ "res://.import/power_node.png-463069a5604e9d567e4622413e4a59b3.stex" ]
 
 [params]
 

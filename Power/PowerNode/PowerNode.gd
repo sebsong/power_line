@@ -1,4 +1,4 @@
-extends "res://PoweredObject.gd"
+extends "res://Power/PoweredObject.gd"
 
 const POWER_LINE_SCENE : PackedScene = preload("res://Scenes/PowerLine.tscn")
 const RANGE_LINE_SCENE : PackedScene = preload("res://Scenes/RangeLine.tscn")
@@ -49,7 +49,7 @@ func connect_range_lines_to_player():
 			range_line = null
 
 func update_color():
-	var sprite = $KinematicBody.get_node("Sprite")
+	var sprite = $KinematicBody2D/Sprite
 	if has_power:
 		sprite.modulate = POWERED_MODULATE
 	else:
