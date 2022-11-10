@@ -17,6 +17,9 @@ class Set:
 
 	func items():
 		return dict.keys()
+	
+	func size():
+		return dict.size()
 
 var player : Node
 

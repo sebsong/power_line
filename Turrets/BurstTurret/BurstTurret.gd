@@ -2,7 +2,7 @@ extends "res://Turrets/FiringTurret.gd"
 
 const DEFAULT_FIRE_RATE : float = 1.0
 const DEFAULT_TURRET_RANGE : float = 250.0
-const DEFAULT_DAMAGE : float = 40.0
+const DEFAULT_DAMAGE : float = 10.0
 
 var burst_radius : float
 
@@ -13,6 +13,9 @@ func _ready():
 
 	Global.resize_kinematic_body($KinematicBody2D, DEFAULT_TURRET_SIZE, DEFAULT_TURRET_SIZE)
 	Global.resize_sprite($Burst, turret_range * 2, turret_range * 2)
+
+func _process(_delta):
+	set_damage(DEFAULT_DAMAGE * connections.size())
 
 func fire():
 	$Burst.frame = 0
